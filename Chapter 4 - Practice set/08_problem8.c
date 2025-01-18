@@ -6,11 +6,13 @@ int main(){
     // n! = 1 X 2 X 3 X 4 X 5 ..... X n
     // 0! = 1
     int product=1;
-    int n = 1;
+    int n ;
+    printf("put the number you want to do factorial\n");
+    scanf("%d", &n );
     for (int i = 1; i <= n; i++)
     {
         product *=i;
     }
-    printf("The factorial is %d", product);
+    printf("for %d The factorial is %d\t", n , product);
     return 0;
 }
